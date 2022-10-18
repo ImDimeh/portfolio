@@ -1,0 +1,7 @@
+@mixin flex-navbar($justify) {
+  display: flex;
+  position: sticky;
+  justify-content: $justify;
+  align-items: center;
+  padding: 30px 10%;
+}
