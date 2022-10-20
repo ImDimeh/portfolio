@@ -21,6 +21,7 @@ $color7: #030910;
 
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: $background;
 }
 header {
   height: 15vh;
@@ -72,6 +73,20 @@ header {
   }
 }
 
+// presentation
+
+div.presentation {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    height: 25vh;
+  }
+}
+// responsive
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 0;
@@ -94,7 +109,7 @@ header {
       justify-content: center;
       align-items: center;
 
-      margin-top: -110%;
+      margin-top: -100vh;
 
       transition: all 0.5s ease;
 
@@ -129,6 +144,15 @@ header {
       right: 35px;
       top: 40px;
       width: 55px;
+    }
+  }
+
+  // presentation
+
+  div.presentation {
+    img {
+      border-radius: 50%;
+      height: 25vh;
     }
   }
 }
