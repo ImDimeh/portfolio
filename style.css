@@ -83,9 +83,14 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .navbar .nav-links ul .active a {
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10vw 0vw #58c7fd, 0 0 2vw 0.4vw #58c7fd, inset 0 0 0.5vw 0.2vw #58c7fd, inset 0 0 0.2vw 0.2vw #58c7fd, inset 0 0 0.25vw 0.2vw #101336;
+  }
   .navbar .nav-links ul li {
     margin: 25px 0;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .navbar .mobile-menu {
     margin-top: 0;

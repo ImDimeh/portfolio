@@ -103,10 +103,19 @@ header {
         flex-direction: column;
 
         align-items: center;
+        .active {
+          a {
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10vw 0vw $color4, 0 0 2vw 0.4vw $color4,
+              inset 0 0 0.5vw 0.2vw $color4, inset 0 0 0.2vw 0.2vw $color4,
+              inset 0 0 0.25vw 0.2vw $color1;
+          }
+        }
 
         li {
           margin: 25px 0;
-          font-size: 2em;
+          font-size: 2.5em;
         }
       }
     }
