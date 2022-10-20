@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
   background-color: #042935;
 }
@@ -46,10 +46,56 @@ header {
   border-bottom: #58c7fd 2px solid;
   font-weight: 600;
 }
+.navbar .menu-burger {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 40%;
+  width: 60px;
+}
 
 @media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .name {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+  }
   .navbar .nav-links {
-    display: none;
+    position: absolute;
+    background-color: #030910;
+    opacity: 0.9;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 2em;
+  }
+  .navbar .mobile-menu {
+    margin-left: 0;
+  }
+  .navbar .menu-burger {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    width: 55px;
   }
 }
 
