@@ -155,9 +155,14 @@ div.presentation {
 // presentation
 
 div.presentation {
-  margin-bottom: 50vh;
-  height: 5vh;
+  margin-bottom: 45vh;
+  height: 10vh;
   color: $color3;
+  p {
+    margin: 5vh 50px;
+    font-size: 2em;
+    color: $color4;
+  }
   h1 {
     margin-top: 50px;
   }
@@ -175,6 +180,7 @@ div.presentation {
 
 // SOCIAL NETWORK
 div.social-network {
+  padding-top: 10vh;
   background-color: $background;
   height: 20vh;
   display: flex;
