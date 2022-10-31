@@ -118,7 +118,7 @@ div.presentation img {
   }
 }
 div.presentation {
-  margin-bottom: 45vh;
+  margin-bottom: 50vh;
   height: 10vh;
   color: #017aff;
 }
@@ -143,6 +143,7 @@ div.social-network {
   height: 20vh;
   display: flex;
   justify-content: center;
+  margin-top: 20vh;
 }
 div.social-network ul {
   position: relative;

@@ -155,9 +155,10 @@ div.presentation {
 // presentation
 
 div.presentation {
-  margin-bottom: 45vh;
+  margin-bottom: 50vh;
   height: 10vh;
   color: $color3;
+
   p {
     margin: 5vh 50px;
     font-size: 2em;
@@ -185,6 +186,7 @@ div.social-network {
   height: 20vh;
   display: flex;
   justify-content: center;
+  margin-top: 20vh;
 
   ul {
     position: relative;
