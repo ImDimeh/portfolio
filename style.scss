@@ -423,7 +423,7 @@ div.social-network {
 @media screen and (min-width: 1000px) {
   section.passion {
     padding-top: 20vh;
-    height: 1vh;
+    height: 100vh;
     width: 100%;
     background-color: $color6;
     margin-bottom: 10vh;
@@ -434,8 +434,10 @@ div.social-network {
       align-items: center;
 
       display: flex;
-      flex-direction: row;
-      align-content: space-between;
+      width: 100%;
+      flex-direction: column;
+      align-content: center;
+
       background-color: $color6;
     }
 
@@ -445,15 +447,17 @@ div.social-network {
       padding: 7.5% 0;
     }
     div.container {
-      /* From https://css.glass */
       background: rgba(88, 199, 253, 0.16);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
       border: 1px solid rgba(88, 199, 253, 1);
 
-      height: 20vh;
-      margin: 5vh 10px;
+      width: 33%;
+      height: 40vh;
+
+      margin: 5vh auto;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
@@ -463,7 +467,7 @@ div.social-network {
       align-content: space-between;
 
       border-radius: 10px;
-      max-width: 500px;
+      min-width: 500px;
 
       p {
         color: #58c7fd;
@@ -478,8 +482,17 @@ div.social-network {
       }
     }
     div.container:nth-child(even) {
-      height: 20vh;
-      margin: 5vh 10px;
+      background: rgba(88, 199, 253, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(88, 199, 253, 1);
+
+      width: 33%;
+      height: 40vh;
+
+      margin: 5vh auto;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
@@ -489,7 +502,7 @@ div.social-network {
       align-content: space-between;
 
       border-radius: 10px;
-      max-width: 500px;
+      min-width: 500px;
     }
   }
 
@@ -505,8 +518,9 @@ div.social-network {
       align-items: center;
 
       display: flex;
-      flex-direction: row;
-      align-content: space-between;
+      width: 100%;
+      flex-direction: column;
+      align-content: center;
       background-color: $color1;
     }
 
@@ -514,6 +528,7 @@ div.social-network {
       text-align: center;
       color: $color3;
       padding: 7.5% 0;
+      background-color: $color1;
     }
     div.container-étude {
       /* From https://css.glass */
@@ -524,8 +539,10 @@ div.social-network {
       -webkit-backdrop-filter: blur(5px);
       border: 1px solid rgba(88, 199, 253, 1);
 
-      height: 20vh;
-      margin: 5vh 10px;
+      width: 33%;
+      height: 40vh;
+
+      margin: 5vh auto;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
@@ -535,7 +552,7 @@ div.social-network {
       align-content: space-between;
 
       border-radius: 10px;
-      max-width: 500px;
+      min-width: 500px;
 
       a {
         color: red;
@@ -543,18 +560,27 @@ div.social-network {
       p {
         color: #58c7fd;
         padding: 20px;
-        font-size: 0.6em;
+        font-size: 1em;
       }
       img {
-        height: 20vh;
+        height: 30vh;
         width: 40vw;
         border-radius: 30%;
         padding: 20px;
       }
     }
     div.container-étude:nth-child(even) {
-      height: 20vh;
-      margin: 5vh 10px;
+      background: rgba(88, 199, 253, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(88, 199, 253, 1);
+
+      width: 33%;
+      height: 40vh;
+
+      margin: 5vh auto;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
@@ -564,7 +590,7 @@ div.social-network {
       align-content: space-between;
 
       border-radius: 10px;
-      max-width: 500px;
+      min-width: 500px;
     }
   }
 }
