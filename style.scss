@@ -445,6 +445,7 @@ div.social-network {
       text-align: center;
       color: $color3;
       padding: 7.5% 0;
+      font-size: 3em;
     }
     div.container {
       background: rgba(88, 199, 253, 0.16);
@@ -472,10 +473,10 @@ div.social-network {
       p {
         color: #58c7fd;
         padding: 20px;
-        font-size: 0.9em;
+        font-size: 1em;
       }
       img {
-        height: 20vh;
+        height: 30vh;
         width: 40vw;
         border-radius: 30%;
         padding: 20px;
@@ -506,6 +507,8 @@ div.social-network {
     }
   }
 
+  // section étude
+
   section.étude {
     padding-top: 110vh;
     height: 1vh;
@@ -529,6 +532,7 @@ div.social-network {
       color: $color3;
       padding: 7.5% 0;
       background-color: $color1;
+      font-size: 3em;
     }
     div.container-étude {
       /* From https://css.glass */
