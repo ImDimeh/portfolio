@@ -56,6 +56,14 @@ header {
 
       li {
         margin: 0 30px;
+        :hover {
+          transition: 300ms ease-in;
+          border: $color3 4px solid;
+          color: $color3;
+          text-decoration: underline;
+          border-radius: 4px;
+          padding: 5px 10px;
+        }
       }
       .active {
         a {
