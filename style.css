@@ -156,6 +156,7 @@ div.social-network {
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+  margin-bottom: 200px;
 }
 div.social-network ul {
   position: relative;
@@ -178,7 +179,6 @@ div.social-network ul .mobile-social-network {
   cursor: pointer;
 }
 div.social-network ul li {
-  background-color: #00131c;
   position: relative;
   width: 120px;
   height: 120px;
@@ -186,7 +186,6 @@ div.social-network ul li {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0 15px 35px #58c7fd;
   cursor: pointer;
 }
 div.social-network ul li .fa-brands {
@@ -198,12 +197,12 @@ div.social-network ul li .fa-brands {
 div.social-network ul li::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 0;
   overflow: hidden;
-  border-bottom: 4px solid var(--color);
+  border-top: 4px solid var(--color);
   border-radius: 50%;
   transition: 0.5s ease-in-out;
   font-family: fontAwesome;
