@@ -166,6 +166,16 @@ div.social-network ul {
   margin-top: 20px;
   gap: 40px;
 }
+div.social-network ul > a {
+  color: var(--color);
+  padding: 10px;
+  border: 2px solid var(--color);
+  transition: 500ms ease-in;
+}
+div.social-network ul > a:hover {
+  background-color: var(--color);
+  color: #00131c;
+}
 div.social-network ul .mobile-social-network {
   background-color: #00131c;
   opacity: 0.2;
@@ -219,7 +229,7 @@ div.social-network ul li:hover::before {
 div.social-network ul li:nth-child(1)::before {
   content: "\f09b";
 }
-div.social-network ul li:nth-child(2)::before {
+div.social-network ul li:nth-child(3)::before {
   content: "\f08c";
 }
 
