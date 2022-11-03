@@ -354,7 +354,7 @@ div.social-network ul li:nth-child(2)::before {
     max-width: 500px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 901px) {
   section.passion {
     padding-top: 20vh;
     height: 100vh;
