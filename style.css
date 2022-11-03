@@ -330,6 +330,7 @@ div.social-network ul li:nth-child(2)::before {
     color: red;
   }
   section.étude div.container-étude p {
+    margin: auto 50px;
     color: #58c7fd;
     padding: 20px;
     font-size: 0.6em;
