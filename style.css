@@ -77,6 +77,35 @@ div.presentation img {
 }
 
 @media screen and (max-width: 900px) {
+  div.social-network {
+    align-items: center;
+    background-color: #042935;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  div.social-network ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 25px;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  div.social-network ul > a {
+    color: var(--color);
+    padding: 10px;
+    border: 2px solid var(--color);
+    transition: 500ms ease-in;
+  }
+  div.social-network ul > a:hover {
+    background-color: var(--color);
+    color: #00131c;
+  }
   .navbar {
     padding: 0;
     background-color: #00131c;
@@ -131,7 +160,7 @@ div.presentation img {
 }
 div.presentation {
   margin-bottom: 50vh;
-  height: 10vh;
+  height: 25vh;
   color: #017aff;
 }
 div.presentation p {
@@ -149,16 +178,13 @@ div.presentation img {
   box-shadow: 0 0 10vw 0vw #58c7fd, 0 0 2vw 0.4vw #58c7fd, inset 0 0 0.5vw 0.2vw #58c7fd, inset 0 0 0.2vw 0.2vw #58c7fd, inset 0 0 0.25vw 0.2vw #101336;
 }
 
-div.social-network {
-  padding-top: 20vh;
+.social-network {
   background-color: #042935;
   height: 20vh;
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
-  margin-bottom: 200px;
 }
-div.social-network ul {
+.social-network ul {
   position: relative;
   display: flex;
   align-items: center;
@@ -166,17 +192,17 @@ div.social-network ul {
   margin-top: 20px;
   gap: 40px;
 }
-div.social-network ul > a {
+.social-network ul > a {
   color: var(--color);
   padding: 10px;
   border: 2px solid var(--color);
   transition: 500ms ease-in;
 }
-div.social-network ul > a:hover {
+.social-network ul > a:hover {
   background-color: var(--color);
   color: #00131c;
 }
-div.social-network ul .mobile-social-network {
+.social-network ul .mobile-social-network {
   background-color: #00131c;
   opacity: 0.2;
   position: relative;
@@ -188,7 +214,7 @@ div.social-network ul .mobile-social-network {
   border-radius: 50%;
   cursor: pointer;
 }
-div.social-network ul li {
+.social-network ul li {
   position: relative;
   width: 120px;
   height: 120px;
@@ -198,13 +224,13 @@ div.social-network ul li {
   border-radius: 50%;
   cursor: pointer;
 }
-div.social-network ul li .fa-brands {
+.social-network ul li .fa-brands {
   font-size: 6em;
   border-radius: 50%;
   -webkit-text-stroke: 2px var(--color);
   color: transparent;
 }
-div.social-network ul li::before {
+.social-network ul li::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -222,14 +248,14 @@ div.social-network ul li::before {
   border-radius: 50%;
   color: var(--color);
 }
-div.social-network ul li:hover::before {
+.social-network ul li:hover::before {
   border-radius: 50%;
   height: 100%;
 }
-div.social-network ul li:nth-child(1)::before {
+.social-network ul li:nth-child(1)::before {
   content: "\f09b";
 }
-div.social-network ul li:nth-child(3)::before {
+.social-network ul li:nth-child(3)::before {
   content: "\f08c";
 }
 
@@ -250,6 +276,13 @@ div.social-network ul li:nth-child(3)::before {
     align-content: space-between;
     background-color: #00131c;
   }
+  section.passion div.social-network {
+    background-color: #042935;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   section.passion h1 {
     text-align: center;
     color: #017aff;
@@ -260,8 +293,6 @@ div.social-network ul li:nth-child(3)::before {
     background: rgba(88, 199, 253, 0.16);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgb(88, 199, 253);
     height: 20vh;
     margin: 5vh 10px;
@@ -362,6 +393,50 @@ div.social-network ul li:nth-child(3)::before {
     align-content: space-between;
     border-radius: 10px;
     max-width: 500px;
+  }
+  .h1-project {
+    color: #58c7fd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .project {
+    background-color: #00131c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .project .project-container:hover {
+    transition: 300ms ease-in;
+    background-color: #101336;
+  }
+  .project .project-container {
+    margin-top: 20px;
+    background-color: #017aff;
+    height: 500px;
+    width: 300px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #00131c;
+    border: #017aff 2px solid;
+  }
+  .project .project-container img {
+    height: 200px;
+    width: 99%;
+  }
+  .project .project-container p {
+    padding: 20px;
+    color: #58c7fd;
+    text-align: center;
+  }
+  .project .project-container a {
+    display: block;
+    width: 100%;
+    color: #017aff;
+    text-align: center;
   }
 }
 @media screen and (min-width: 901px) {
@@ -512,6 +587,52 @@ div.social-network ul li:nth-child(3)::before {
     align-content: space-between;
     border-radius: 10px;
     min-width: 500px;
+  }
+  .h1-project {
+    color: #58c7fd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .project {
+    background-color: #00131c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+    column-gap: 40px;
+  }
+  .project .project-container:hover {
+    transition: 300ms ease-in;
+    background-color: #101336;
+  }
+  .project .project-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #017aff;
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #00131c;
+    border: #017aff 2px solid;
+  }
+  .project .project-container img {
+    height: 200px;
+    width: 100%;
+  }
+  .project .project-container p {
+    padding: 20px;
+    color: #58c7fd;
+    text-align: center;
+  }
+  .project .project-container a {
+    display: block;
+    width: 100%;
+    color: #017aff;
+    text-align: center;
+    cursor: pointer;
   }
 }
 
