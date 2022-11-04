@@ -604,14 +604,42 @@ div.presentation img {
     column-gap: 40px;
   }
   .project .project-container:hover {
-    transition: 300ms ease-in;
+    transition: 500ms ease-in;
     background-color: #101336;
+  }
+  .project .project-container:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #017aff;
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #00131c;
+    border: #017aff 2px solid;
+  }
+  .project .project-container:hover img {
+    height: 200px;
+    width: 100%;
+  }
+  .project .project-container:hover p {
+    display: block;
+    padding: 20px;
+    color: #58c7fd;
+    text-align: center;
+  }
+  .project .project-container:hover a {
+    display: block;
+    width: 100%;
+    color: #017aff;
+    text-align: center;
+    cursor: pointer;
   }
   .project .project-container {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #017aff;
-    height: 500px;
+    height: 200px;
     width: 350px;
     border-radius: 5px;
     align-items: center;
@@ -623,12 +651,13 @@ div.presentation img {
     width: 100%;
   }
   .project .project-container p {
+    display: none;
     padding: 20px;
     color: #58c7fd;
     text-align: center;
   }
   .project .project-container a {
-    display: block;
+    display: none;
     width: 100%;
     color: #017aff;
     text-align: center;

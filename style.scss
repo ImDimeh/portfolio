@@ -717,11 +717,11 @@ div.presentation {
     justify-content: center;
     column-gap: 40px;
     .project-container:hover {
-      transition: 300ms ease-in;
+      transition: 500ms ease-in;
       background-color: $color1;
     }
 
-    .project-container {
+    .project-container:hover {
       margin-top: 20px;
       margin-bottom: 20px;
       background-color: $color3;
@@ -738,12 +738,43 @@ div.presentation {
         width: 100%;
       }
       p {
+        display: block;
         padding: 20px;
         color: $color4;
         text-align: center;
       }
       a {
         display: block;
+        width: 100%;
+        color: $color3;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .project-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: $color3;
+      height: 200px;
+      width: 350px;
+      border-radius: 5px;
+      align-items: center;
+      background-color: #00131c;
+      border: $color3 2px solid;
+
+      img {
+        height: 200px;
+
+        width: 100%;
+      }
+      p {
+        display: none;
+        padding: 20px;
+        color: $color4;
+        text-align: center;
+      }
+      a {
+        display: none;
         width: 100%;
         color: $color3;
         text-align: center;
