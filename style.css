@@ -159,25 +159,59 @@ div.presentation img {
   }
 }
 div.presentation {
-  margin-bottom: 50vh;
-  height: 25vh;
   color: #017aff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
 }
 div.presentation p {
-  margin: 5vh 50px;
-  font-size: 2em;
   color: #b9e0fb;
+  line-height: 1.4;
+  float: left;
 }
 div.presentation h1 {
-  margin-top: 50px;
+  margin-bottom: 10px;
 }
 div.presentation img {
-  margin-top: 50px;
   border-radius: 50%;
-  height: 25vh;
-  box-shadow: 0 0 10vw 0vw #b9e0fb, 0 0 2vw 0.4vw #b9e0fb, inset 0 0 0.5vw 0.2vw #b9e0fb, inset 0 0 0.2vw 0.2vw #b9e0fb, inset 0 0 0.25vw 0.2vw #101336;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  float: left;
+  shape-outside: content-box;
+  margin-bottom: 50px;
 }
 
+section.technologie {
+  margin-top: 100px;
+  color: #017aff;
+  text-align: center;
+  height: 25%;
+}
+section.technologie .transition-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200vw;
+  background-color: #042935;
+  animation: slidein 4s linear 1s;
+}
+section.technologie .transition-container img {
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
 .social-network {
   background-color: #042935;
   height: 20vh;
