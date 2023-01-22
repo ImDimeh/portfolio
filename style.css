@@ -193,9 +193,16 @@ section.technologie .transition-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 200vw;
+  width: 500px;
   background-color: #042935;
-  animation: slidein 4s linear 1s;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section.technologie .transition-container .fa-brands {
+  font-size: 10em;
+  border-radius: 50%;
+  -webkit-text-stroke: 2px var(--color);
+  color: var(--color);
 }
 section.technologie .transition-container img {
   padding-top: 10px;
