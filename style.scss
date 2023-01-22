@@ -256,15 +256,25 @@ section.technologie{
     background-color: #042935;
     //animation: slidein 4s linear 1s;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 50px 50px;
+
 
     .fa-brands {
-        font-size: 10em;
+        font-size: 7.5em;
         border-radius: 50%;
         -webkit-text-stroke: 2px var(--color);
-        color: var(--color);
+        color: transparent;
+        
+        
       }
-
+      .fa-brands:hover {
+       
+          transition: 300ms ease-in;
+          transform: scale(1.2);
+          color: var(--color);
+        
+      }
   
   
   img{
