@@ -244,28 +244,58 @@ div.presentation {
 
 
 section.technologie{
-  margin-top: 100px;
+  margin-top: 200px;
   color: $color3;
   text-align: center;
   height: 25%;
+  background-color: #00131c;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  border-radius: 10px;
+  
+h1{
+  margin-bottom: 50px;
+  color: #58c7fd;
+  font-size: 3rem;
+}
+
+  a {
+    
+     color: var(--color);
+      padding: 10px;
+      border: 2px solid var(--color);
+      transition: 500ms ease-in;
+      margin: 20px auto;
+      
+  }
+  a:hover {
+    background-color: var(--color);
+    color: #00131c;
+  }
   .transition-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 500px;
-    background-color: #042935;
+    width: 700px;
+    //background-color: #042935;
     //animation: slidein 4s linear 1s;
     overflow: hidden;
     margin: 20px auto;
     padding: 50px 50px;
+    flex-wrap: wrap;
+    
+    
 
 
     .fa-brands {
+      
         font-size: 7.5em;
         border-radius: 50%;
         -webkit-text-stroke: 2px var(--color);
         color: transparent;
-        
+        margin: 10px 20px;
         
       }
       .fa-brands:hover {
@@ -279,8 +309,8 @@ section.technologie{
   
   img{
     padding-top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    
     object-fit: cover;
    
   }}

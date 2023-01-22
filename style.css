@@ -184,26 +184,49 @@ div.presentation img {
 }
 
 section.technologie {
-  margin-top: 100px;
+  margin-top: 200px;
   color: #017aff;
   text-align: center;
   height: 25%;
+  background-color: #00131c;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+section.technologie h1 {
+  margin-bottom: 50px;
+  color: #58c7fd;
+  font-size: 3rem;
+}
+section.technologie a {
+  color: var(--color);
+  padding: 10px;
+  border: 2px solid var(--color);
+  transition: 500ms ease-in;
+  margin: 20px auto;
+}
+section.technologie a:hover {
+  background-color: var(--color);
+  color: #00131c;
 }
 section.technologie .transition-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 500px;
-  background-color: #042935;
+  width: 700px;
   overflow: hidden;
   margin: 20px auto;
   padding: 50px 50px;
+  flex-wrap: wrap;
 }
 section.technologie .transition-container .fa-brands {
   font-size: 7.5em;
   border-radius: 50%;
   -webkit-text-stroke: 2px var(--color);
   color: transparent;
+  margin: 10px 20px;
 }
 section.technologie .transition-container .fa-brands:hover {
   transition: 300ms ease-in;
@@ -212,8 +235,7 @@ section.technologie .transition-container .fa-brands:hover {
 }
 section.technologie .transition-container img {
   padding-top: 10px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
   object-fit: cover;
 }
 
