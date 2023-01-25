@@ -241,6 +241,7 @@ div.presentation {
     
   }
 }
+// partie techonologie 
 
 
 section.technologie{
@@ -266,13 +267,15 @@ h1{
      color: var(--color);
       padding: 10px;
       border: 2px solid var(--color);
-      transition: 500ms ease-in;
+    transition: 500ms ease-in;
       margin: 20px auto;
+      font-size: 40px;
       
   }
   a:hover {
     background-color: var(--color);
     color: #00131c;
+    transition: 500ms ease-in;
   }
   .transition-container {
     display: flex;
@@ -296,6 +299,7 @@ h1{
         -webkit-text-stroke: 2px var(--color);
         color: transparent;
         margin: 10px 20px;
+      transition: 300ms ease-in;
         
       }
       .fa-brands:hover {
@@ -551,7 +555,7 @@ h1{
       max-width: 500px;
 
       a {
-        color: red;
+        color: $color3;
       }
       p {
         margin: auto 50px;
@@ -607,7 +611,8 @@ h1{
       width: 300px;
       border-radius: 5px;
       align-items: center;
-      background-color: #00131c;
+
+
       border: $color3 2px solid;
 
       img {
@@ -619,6 +624,7 @@ h1{
         padding: 20px;
         color: $color4;
         text-align: center;
+
       }
       a {
         display: block;
@@ -888,4 +894,36 @@ h1{
       }
     }
   }
+}
+
+
+.container-description {
+  max-width: 600px;
+
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px $color3;
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 40px 5px 0;
+  }
+}
+
+.container-description::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container-description h2 {
+  margin-bottom: 10px;
+}
+.container-description p {
+  line-height: 1.4;
 }

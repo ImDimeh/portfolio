@@ -206,10 +206,12 @@ section.technologie a {
   border: 2px solid var(--color);
   transition: 500ms ease-in;
   margin: 20px auto;
+  font-size: 40px;
 }
 section.technologie a:hover {
   background-color: var(--color);
   color: #00131c;
+  transition: 500ms ease-in;
 }
 section.technologie .transition-container {
   display: flex;
@@ -227,6 +229,7 @@ section.technologie .transition-container .fa-brands {
   -webkit-text-stroke: 2px var(--color);
   color: transparent;
   margin: 10px 20px;
+  transition: 300ms ease-in;
 }
 section.technologie .transition-container .fa-brands:hover {
   transition: 300ms ease-in;
@@ -437,7 +440,7 @@ section.technologie .transition-container img {
     max-width: 500px;
   }
   section.étude div.container-étude a {
-    color: red;
+    color: #017aff;
   }
   section.étude div.container-étude p {
     margin: auto 50px;
@@ -489,7 +492,6 @@ section.technologie .transition-container img {
     width: 300px;
     border-radius: 5px;
     align-items: center;
-    background-color: #00131c;
     border: #017aff 2px solid;
   }
   .project .project-container img {
@@ -732,6 +734,36 @@ section.technologie .transition-container img {
     text-align: center;
     cursor: pointer;
   }
+}
+.container-description {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #017aff;
+}
+.container-description img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 40px 5px 0;
+}
+
+.container-description::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container-description h2 {
+  margin-bottom: 10px;
+}
+
+.container-description p {
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=style.css.map */
